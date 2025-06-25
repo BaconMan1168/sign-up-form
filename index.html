@@ -21,7 +21,7 @@
                 </header>
                 
                 <form action="" method="post">
-                    <h1>Get a cat today! Required fields are labeled with a *</h1>
+                    <h1>Get a cat today! <strong>Required</strong> fields are labeled with a *</h1>
                     
 
                     <div class="form-group">
@@ -60,9 +60,36 @@
                         </span>
                     </div>
 
-                    <div>
+                    <div class="breed-select">
                         <label for="cat-select">Select a cat breed *</label>
-                        <select name="cat-select" id="cat-select" required></select>
+                        <select name="cat-select" id="cat-select" required>
+                            <button>
+                                <selectedcontent></selectedcontent>
+                            </button>
+
+                            <option value="siamese">
+                                <span>Siamese</span>
+                            </option>
+                            <option value="ragdoll">
+                                <span>Ragdoll</span>
+                            </option>
+                            <option value="turkish-angora">
+                                <span>Turkish-Angora</span>
+                            </option>
+                            <option value="british-shorthair">
+                                <span>British Shorthair</span>
+                            </option>
+                            <option value="maine-coon">
+                                <span>Maine Coon</span>
+                            </option>
+                            <option value="bombay-cat">
+                                <span>Bombay</span>
+                            </option>
+                            <option value="birman">
+                                <span>Birman</span>
+                            </option>
+
+                        </select>
                     </div>
 
                     <div class="submit-section">
