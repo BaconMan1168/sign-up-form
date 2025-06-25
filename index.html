@@ -13,37 +13,51 @@
             </div>
             <div class="right-elements">
                 <header class="header">
-                    <h2 class="header-one">This is a practice sign up form. It is not functional: 
+                    <h2 class="sub-header-one">This is a practice sign up form. It is not functional: 
                     it doesn't create any accounts for anything, nor does it send me your data (or does it). Sign up now to get started and get a free cat today! </h2>
-                    <h2 class="header-two">
+                    <h2 class="sub-header-two">
                         Who doesn't like cats? Here's the form!
                     </h2>
                 </header>
                 
                 <form action="" method="post">
                     <h1>Get a cat today! Required fields are labeled with a *</h1>
+                    
+                    
+                    <div class="form-group">
+                        <span>
+                            <label for="first-name">First Name *</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </span>
 
-                    <div>
-                        <label for="first-name">First Name *</label>
-                        <input type="text" id="first-name" name="first-name" required>
-
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name">
-                    </div>
-                    <div>
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="Phone Number">Phone Number *</label>
-                        <input type="tel" id="phone-number" name="phone-number" required>
-                    </div>
-
-                    <div>
-                        <label for="password">Password *</label>
-                        <input type="password" required>
+                        <span>
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name">
+                        </span>
                         
-                        <label for="confirm-password">Confirm Password *</label>
-                        <input type="password" required>
+                    </div>
+                    <div class="form-group">
+                        <span>
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </span>
+
+                        <span>
+                            <label for="Phone Number">Phone Number *</label>
+                            <input type="tel" id="phone-number" name="phone-number" required>
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <span>
+                            <label for="password">Password *</label>
+                            <input type="password" required>
+                        </span>
+                        
+                        <span>
+                            <label for="confirm-password">Confirm Password *</label>
+                            <input type="password" required>
+                        </span>
                     </div>
 
                     <div>
@@ -51,8 +65,9 @@
                         <select name="cat-select" id="cat-select" required></select>
                     </div>
 
-                    <div class="submit-btn">
+                    <div class="submit-section">
                         <button type="submit">Create Account</button>
+                        <p>Already have a cat? Click <strong>here</strong> to see</p>
                     </div>
                 </form>
             </div>
